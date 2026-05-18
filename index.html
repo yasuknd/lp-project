@@ -6,6 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>女性自身プレミアム｜定期購読</title>
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <script>
+        const redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          window.history.replaceState(null, '', '/lp-project' + redirect);
+        }
+      </script>
     </head>
 
     <body>
