@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/lp-project/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
